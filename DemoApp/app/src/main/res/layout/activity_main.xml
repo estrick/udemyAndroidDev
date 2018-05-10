@@ -2,16 +2,24 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/androidImage"
-        android:layout_width="45dp"
+    <TextView
+        android:id="@+id/demoAppText"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_launcher_round"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="39dp" />
+        android:background="#2ca5cd"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="10dp"
+        android:text="DemoApp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:fontFamily="cursive"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textSize="24sp" />
 
 </android.support.constraint.ConstraintLayout>
