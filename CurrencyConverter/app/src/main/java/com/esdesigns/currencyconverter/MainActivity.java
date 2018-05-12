@@ -8,6 +8,8 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 import java.nio.DoubleBuffer;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Get input from text field and convert to double for currency conversion
         EditText userInput = (EditText) findViewById(R.id.userInput);
-        double amountEntered = Double.parseDouble(userInput.getText().toString());
+        double amountEntered = (Double) Double.parseDouble(userInput.getText().toString());
         double convertedAmount = 0;
 
         // Initialise toast string
@@ -36,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         final double AUD2JPY = 82.49;
         final double AUD2RMB = 4.77;
         final double AUD2EURO = 0.63;
+        DecimalFormat formatter = new DecimalFormat("#0.00");
+        System.out.println(formatter.format(4.0));
 
         // Check which radio button was clicked
         switch(view.getId()) {
@@ -73,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Display converted amount in Toast
         Toast.makeText(this,  amountEntered + " AUD = " + toastString + " " +
-                convertedAmount, Toast.LENGTH_SHORT).show();
+                formatter.format(convertedAmount), Toast.LENGTH_SHORT).show();
 
 
     }
