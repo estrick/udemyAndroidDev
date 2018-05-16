@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NumberShapes</string>
+    <string name="enterYourNum">Enter your number</string>
+    <string name="checkNumber">Check Number</string>
+</resources>
