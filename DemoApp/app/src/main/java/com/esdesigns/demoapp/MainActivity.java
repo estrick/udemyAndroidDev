@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
                 "\nPassword: " + password.getText().toString(), Toast.LENGTH_LONG).show();
     }
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
