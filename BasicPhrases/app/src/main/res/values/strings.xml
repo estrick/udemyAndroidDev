@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Basic Phrases</string>
+    <string name="hello">Hello!</string>
+    <string name="goodbye">GoodBye</string>
+    <string name="howAreYou">How Are You?</string>
+    <string name="goodNight">Good Night</string>
+    <string name="thankYou">Thanks</string>
+    <string name="whatIsYourName">What\'s your name?</string>
+    <string name="hungry">I\'m Hungry</string>
+</resources>
