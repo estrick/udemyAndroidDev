@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected Bitmap doInBackground(String... urls) {
 
-            Bitmap result;
             URL url;
             HttpURLConnection urlConnection;
 
