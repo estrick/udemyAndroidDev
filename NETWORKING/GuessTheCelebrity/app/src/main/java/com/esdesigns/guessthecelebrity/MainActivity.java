@@ -35,19 +35,19 @@ public class MainActivity extends AppCompatActivity {
     ImageView imageView;
     LinearLayout linearLayout;
 
-    int answerPosition = 0;
+    int answerPositions[] = new int[2];
     String pageContents;
 
     public void buttonPressed(View view) {
         // Display result in toast
-        if(answerPosition == Integer.parseInt(view.getTag().toString())) {
+        if(answerPositions[0] == Integer.parseInt(view.getTag().toString())) {
             Toast.makeText(this, "Correct", Toast.LENGTH_LONG).show();
         } else {
-            Toast.makeText(this, "Incorrect: The player was " + items.get(0).get(answerPosition), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Incorrect: The player was " + items.get(0).get(answerPositions[1]), Toast.LENGTH_LONG).show();
         }
         // Generate UI
         items = generateArrayLists(pageContents);
-        answerPosition = placeItems(items);
+        answerPositions = placeItems(items);
     }
 
     public ArrayList<ArrayList> generateArrayLists(String pageContents) {
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         return items;
     }
 
-    public int placeItems(ArrayList<ArrayList> items) {
+    public int[] placeItems(ArrayList<ArrayList> items) {
 
         // Empty Buttons used to determine which buttons have not been used already
         boolean[] emptyButtons = {true, true, true, true};
@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
         Button currentButton;
         Random randItemPosition = new Random();
         Random randButtonPosition = new Random();
+        // answerPositions = {button position, player position}
 
         while(emptyButtons[0] || emptyButtons[1] || emptyButtons[2] || emptyButtons[3]) {
             int itemPosition = randItemPosition.nextInt(items.get(0).size()); // Randomly generate a number that corresponds to a position in the array
@@ -92,7 +93,8 @@ public class MainActivity extends AppCompatActivity {
             // If all buttons are empty it is the first run through, this is the answer and the corresponding
             // button position generated above is the answer position
             if(emptyButtons[0] && emptyButtons[1] && emptyButtons[2] && emptyButtons[3]) {
-                answerPosition = buttonPosition;
+                answerPositions[0] = buttonPosition;
+                answerPositions[1] = itemPosition;
                 ImageDownloader imageDownloader = new ImageDownloader();
                 try {
                     imageView.setImageBitmap(imageDownloader.execute((String) items.get(1).get(itemPosition)).get());
@@ -115,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
-        return answerPosition;
+        return answerPositions;
     }
 
     public String parseWebPage() {
@@ -208,7 +210,7 @@ public class MainActivity extends AppCompatActivity {
         // Get the arrays containing names and srcs
         items = generateArrayLists(pageContents);
         // Place the items in buttons & imageviews
-        answerPosition = placeItems(items);
+        answerPositions = placeItems(items);
     }
 
 
