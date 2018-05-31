@@ -104,7 +104,6 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 currentButton = (Button) linearLayout.getChildAt(buttonPosition);
-                Log.i("Button Position: ", Integer.toString(buttonPosition));
                 currentButton.setText((String) items.get(0).get(itemPosition));
                 emptyButtons[buttonPosition] = false;
             } else {
