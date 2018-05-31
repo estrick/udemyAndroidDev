@@ -2,15 +2,87 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3eac6cb-5388-4162-a3de-af0afd3208f1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/androidTest/java/com/esdesigns/whatstheweather/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/main/java/com/esdesigns/whatstheweather/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/app/src/test/java/com/esdesigns/whatstheweather/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../APIS/WhatsTheWeather/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BASIC LOGIC APPS/BrainTrainer/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../BASIC LOGIC APPS/BrainTrainer/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BASIC LOGIC APPS/CurrencyConverter/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../BASIC LOGIC APPS/CurrencyConverter/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../NETWORKING/DownloadWebContent/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../NETWORKING/DownloadWebContent/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../NETWORKING/DownloadWebContent/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../NETWORKING/DownloadingImages/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../NETWORKING/DownloadingImages/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../NETWORKING/DownloadingImages/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../NETWORKING/DownloadingImages/app/src/main/java/com/esdesigns/downloadingimages/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../NETWORKING/DownloadingImages/app/src/main/java/com/esdesigns/downloadingimages/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../NETWORKING/GuessTheCelebrity/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../NETWORKING/GuessTheCelebrity/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../NETWORKING/GuessTheCelebrity/app/src/main/java/com/esdesigns/guessthecelebrity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../NETWORKING/GuessTheCelebrity/app/src/main/java/com/esdesigns/guessthecelebrity/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../NETWORKING/GuessTheCelebrity/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../NETWORKING/GuessTheCelebrity/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/GuessTheCelebrity/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../NETWORKING/GuessTheCelebrity/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/GuessTheCelebrity/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/.idea/caches/build_file_checksums.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/androidTest/java/com/esdesigns/json/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/main/java/com/esdesigns/json/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/app/src/test/java/com/esdesigns/json/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NETWORKING/JSON/settings.gradle" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +97,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/javaDeepDive/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="74" column="9" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="74" selection-end-column="9" />
+            <state relative-caret-position="451">
+              <caret line="69" column="9" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="69" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,15 +184,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527662987083</updated>
-      <workItem from="1527662992268" duration="3174000" />
+      <workItem from="1527662992268" duration="4375000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3174000" />
+    <option name="totallyTimeSpent" value="4375000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
@@ -162,8 +234,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/javaDeepDive/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="74" column="9" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="74" selection-end-column="9" />
+        <state relative-caret-position="451">
+          <caret line="69" column="9" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="69" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
