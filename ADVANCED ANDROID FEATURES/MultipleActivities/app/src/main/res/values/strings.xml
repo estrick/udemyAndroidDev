@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MultipleActivities</string>
+    <string name="jump">Jump to second activity</string>
+    <string name="jump2">Jump to first activity</string>
+    <string name="first">First Activity</string>
+    <string name="second">Second Activity</string>
+    <string name="mum">Mum</string>
+    <string name="dad">Dad</string>
+    <string name="jacob">Jacob</string>
+    <string name="freddy">Freddy</string>
+</resources>
