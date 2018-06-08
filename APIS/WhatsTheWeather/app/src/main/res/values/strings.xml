@@ -2,4 +2,6 @@
     <string name="app_name">WhatsTheWeather</string>
     <string name="city">Enter a city</string>
     <string name="checkWeather">Check the Weather</string>
+    <string name="unable">Unable to display weather data.</string>
+    <string name="please">Please enter a city.</string>
 </resources>
