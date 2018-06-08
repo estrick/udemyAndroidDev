@@ -42,22 +42,31 @@ public class MainActivity extends AppCompatActivity {
                 Geocoder geocoder = new Geocoder(getApplicationContext(), Locale.getDefault());
                 try {
                     List<Address> addressList = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
-                    String address;
+                    String address = "Address: \n";
                     if (addressList != null && addressList.size() > 0) {
-                        address = "Address: " +
-                                addressList.get(0).getSubThoroughfare() + " " +
-                                addressList.get(0).getThoroughfare() + "\n" +
-                                addressList.get(0).getLocality() + "\n" +
-                                addressList.get(0).getAdminArea() + "\n" +
-                                addressList.get(0).getPostalCode() + "\n" +
-                                addressList.get(0).getCountryName();
-                    } else {
-                        address = "Address: Null";
+                        if(addressList.get(0).getSubThoroughfare() != null) {
+                            address += addressList.get(0).getSubThoroughfare() + " ";
+                        }
+                        if(addressList.get(0).getThoroughfare() != null) {
+                            address += addressList.get(0).getThoroughfare() + "\n";
+                        }
+                        if(addressList.get(0).getLocality() != null) {
+                            address += addressList.get(0).getLocality() + "\n";
+                        }
+                        if(addressList.get(0).getAdminArea() != null) {
+                            address += addressList.get(0).getAdminArea() + "\n";
+                        }
+                        if(addressList.get(0).getPostalCode() != null) {
+                            address += addressList.get(0).getPostalCode() + "\n";
+                        }
+                        if(addressList.get(0).getCountryName() != null) {
+                            address += addressList.get(0).getCountryName();
+                        }
                     }
                     String altitude = "Altitude: " + Double.toString(location.getAltitude());
                     String accuracy = "Accuracy: " + Double.toString(location.getAccuracy());
-                    String latitude = "Latitude: " + Double.toString(location.getLatitude());
-                    String longitude = "Longitude: " + Double.toString(location.getLongitude());
+                    String latitude = "Latitude: " + String.format(Locale.getDefault(), "%.5f", location.getLatitude());
+                    String longitude = "Longitude: " + String.format(Locale.getDefault(), "%.5f", location.getLongitude());
                     infoText.setText(latitude + "\n\n" + longitude + "\n\n" + altitude + "\n\n" + accuracy + "\n\n" + address);
                 } catch (IOException e) {
                     e.printStackTrace();
