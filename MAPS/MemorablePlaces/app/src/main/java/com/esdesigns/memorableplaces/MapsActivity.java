@@ -25,7 +25,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, GoogleMap.OnMapLongClickListener {
 
     private GoogleMap mMap;
 
@@ -52,10 +52,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                 if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
 
-                    ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, 1);
-
-                } else {
-
                     locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
 
                 }
@@ -78,6 +74,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        mMap.setOnMapLongClickListener(this);
 
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
         locationListener = new LocationListener() {
@@ -122,17 +119,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             updateMap(latLng);
         }
 
-        mMap.setOnMapLongClickListener(new GoogleMap.OnMapLongClickListener() {
-            @Override
-            public void onMapLongClick(LatLng latLng) {
-                updateMap(latLng);
-                String address = getAddress(latLng);
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                intent.putExtra("Address", address); // Send whole array list to be added to
-                startActivity(intent);
-            }
-        });
-
     }
 
     public void updateMap(LatLng latLng) {
@@ -164,4 +150,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         return address;
     }
 
+    @Override
+    public void onMapLongClick(LatLng latLng) {
+        updateMap(latLng);
+        String address = getAddress(latLng);
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        intent.putExtra("Address", address); // Send whole array list to be added to
+        startActivity(intent);
+    }
 }
