@@ -12,6 +12,8 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    ArrayList<String> places;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,9 +21,12 @@ public class MainActivity extends AppCompatActivity {
 
         ListView listView = (ListView) findViewById(R.id.listView);
 
-        final ArrayList<String> places = new ArrayList<String>();
+        places = new ArrayList<String>();
 
         places.add("Add a new place");
+
+        Intent intent = getIntent();
+
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, places);
 
@@ -34,15 +39,11 @@ public class MainActivity extends AppCompatActivity {
                 // Check if the position is position 0 (This means we want to add a new place and go to users location)
                 // Any other position means we want to go to that location
 
-                if (position == 0) {
-                    Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
-                    intent.putExtra("Places", places); // Send whole array list to be added to
-                    startActivity(intent);
-                } else {
-                    Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
+                if (position > 0) {
                     intent.putExtra("Location", places.get(position)); // Send coordinates
-                    startActivity(intent);
                 }
+                startActivity(intent);
             }
         });
 
