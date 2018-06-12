@@ -1,18 +1,27 @@
 package com.esdesigns.memorableplaces;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
+import com.google.android.gms.maps.model.LatLng;
+
+import java.io.IOException;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    ArrayList<String> places;
+    static ArrayList<String> places = new ArrayList<>();
+    static ArrayList<LatLng> locations = new ArrayList<>();
+    static ArrayAdapter arrayAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,31 +30,59 @@ public class MainActivity extends AppCompatActivity {
 
         ListView listView = (ListView) findViewById(R.id.listView);
 
-        places = new ArrayList<String>();
+        SharedPreferences sharedPreferences = this.getSharedPreferences("com.esdesigns.memorableplaces", Context.MODE_PRIVATE);
+        ArrayList<String> latitudes = new ArrayList<>();
+        ArrayList<String> longitudes = new ArrayList<>();
 
-        places.add("Add a new place");
+        places.clear();
+        locations.clear();
+        latitudes.clear();
+        longitudes.clear();
 
-        Intent intent = getIntent();
+        try {
+            places = (ArrayList<String>) ObjectSerializer.deserialize(sharedPreferences.getString("places", ObjectSerializer.serialize(new ArrayList<String>())));
+            latitudes = (ArrayList<String>) ObjectSerializer.deserialize(sharedPreferences.getString("latitudes", ObjectSerializer.serialize(new ArrayList<String>())));
+            longitudes = (ArrayList<String>) ObjectSerializer.deserialize(sharedPreferences.getString("longitudes", ObjectSerializer.serialize(new ArrayList<String>())));
 
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, places);
+        if (places.size() > 0 && latitudes.size() > 0 && longitudes.size() > 0) {
+
+            if(places.size() == latitudes.size() && places.size() == longitudes.size()) {
+
+                for (int i = 0; i < latitudes.size(); i++) {
+
+                    locations.add(new LatLng(Double.parseDouble(latitudes.get(i)), Double.parseDouble(longitudes.get(i))));
+
+                }
+
+            }
+
+        } else {
+            places.add("Add a new place...");
+            locations.add(new LatLng(0, 0));
+        }
+
+        arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, places);
 
         listView.setAdapter(arrayAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                // Check if the position is position 0 (This means we want to add a new place and go to users location)
-                // Any other position means we want to go to that location
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
                 Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
-                if (position > 0) {
-                    intent.putExtra("Location", places.get(position)); // Send coordinates
-                }
+                intent.putExtra("placeNumber", i);
+
                 startActivity(intent);
             }
+
         });
+
 
     }
 }
+
